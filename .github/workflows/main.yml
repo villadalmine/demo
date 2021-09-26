@@ -1,0 +1,12 @@
+name: Step 1
+on: push
+jobs:
+  build:
+    name: Create Image
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build
+        run: |
+          docker build -t test ./Build
+          #      - uses: ./Build

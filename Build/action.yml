@@ -1,0 +1,12 @@
+name: "Step 2"
+description: "Step 2"
+author: "itrino@pm.me"
+
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"
